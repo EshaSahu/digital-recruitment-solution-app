@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Candidate Search</title>
+  <style>
+   
+body{background-color: #434343;}
+
+#sideMenu {
+  background-color: #d21515;
+  border: solid 1px; 
+  width: 500px;
+  padding-bottom: 20px;
+  margin: 40px
+}
+
+
+#applicationCount {
+  margin-left: 20px;
+}
+
+
+#applicationType {
+  margin-left: 20px;
+}
+
+
+#jobPostMenuHeader {
+  overflow: auto;
+  
+  padding-bottom: 5px;
+}
+
+
+#jobPostMenuLabel {
+  position: relative;
+  
+  left: 20px;
+  top: 7px;
+}
+
+
+#jobPostMenuButton {
+  position: relative;
+  float: right;
+  right: 20px;
+}
+
+#cardBody {
+  overflow: auto;
+  height: 200px;
+}
+
+
+
+
+#applicationListBox {
+ 
+  margin-top: 40px;
+  margin-right: 40px;
+} 
+
+
+
+#filterBar {
+  
+  margin-top: 15px;
+}
+
+table {
+  margin-top: 15px;
+  font-size: 24px;
+  padding-top: 60px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#applicationListBox{
+   border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 20px;
+  margin-left: 40px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+
+
+   </style>
+</head>
+
+<body>
+   
+ <center>
+         <div class="col" id="applicationListBox">
+            <h1>
+            Applications
+            </h1>
+            
+            
+            <div id="filterBar" >
+              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            </div>
+            <table class="table table-striped">
+               <thead class="thead-dark">
+                  <tr >
+                     <th scope="col">ID</th>
+                     <th scope="col">First Name</th>
+                     <th scope="col">Last Name</th>
+                     <th scope="col">Status</th>
+                     <th scope="col">Date Submitted</th>
+                     <th scope="col">Attachments</th>
+                     <th scope="col">Actions</th>
+                  </tr>
+               </thead>
+               <tbody id="myTable">
+                  <tr>
+                     <th scope="row">1</th>
+                     <td>Esha</td>
+                     <td>Sahu</td>
+                     <td>Unread</td>
+                     <td>8/19/20</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Docs</button>
+                        <button type="button" class="btn btn-secondary">Profile</button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Reject</button>
+                        <button type="button" class="btn btn-secondary">Select</button>
+                        <button type="button" class="btn btn-secondary">Hire</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th scope="row">2</th>
+                     <td>Priya</td>
+                     <td>Kumari</td>
+                     <td>Unread</td>
+                     <td>8/20/20</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Docs</button>
+                        <button type="button" class="btn btn-secondary">Profile</button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Reject</button>
+                        <button type="button" class="btn btn-secondary">Select</button>
+                        <button type="button" class="btn btn-secondary">Hire</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th scope="row">3</th>
+                     <td>Ayushi</td>
+                     <td>Gupta</td>
+                     <td>Rejected</td>
+                     <td>7/21/20</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Docs</button>
+                        <button type="button" class="btn btn-secondary">Profile</button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Reject</button>
+                        <button type="button" class="btn btn-secondary">Select</button>
+                        <button type="button" class="btn btn-secondary">Hire</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th scope="row">3</th>
+                     <td>Divyanshu</td>
+                     <td>Singh</td>
+                     <td>Selected</td>
+                     <td>8/24/20</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Docs</button>
+                        <button type="button" class="btn btn-secondary">Profile</button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Reject</button>
+                        <button type="button" class="btn btn-secondary">Select</button>
+                        <button type="button" class="btn btn-secondary">Hire</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <th scope="row">3</th>
+                     <td>Anushka</td>
+                     <td>Srivastava</td>
+                     <td>Rejected</td>
+                     <td>8/21/20</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Docs</button>
+                        <button type="button" class="btn btn-secondary">Profile</button>
+                     </td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Reject</button>
+                        <button type="button" class="btn btn-secondary">Select</button>
+                        <button type="button" class="btn btn-secondary">Hire</button>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+   
+   <a href="/">
+      <button class="btn btn-light btn-lg" style="margin-top:30px; size:large">BACK</button></a>
+     
+   </center>
+   
+   <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+   </body>
+   </html>
+   
